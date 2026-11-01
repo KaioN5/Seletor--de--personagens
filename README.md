@@ -1,4 +1,4 @@
-# Projeto Dragon Ball
+# Seletor de Personagens
 
 Esse é um projeto que fiz para praticar HTML, CSS e JavaScript. A página mostra alguns personagens e permite escolher qual deles queremos ver.
 
