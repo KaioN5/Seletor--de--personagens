@@ -1,0 +1,170 @@
+:root {
+  color-scheme: dark;
+  font-family: "Rubik", sans-serif;
+  background-color: #05090c;
+  color: #ffffff;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.pagina-erro {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(32px, 8vw, 120px);
+  isolation: isolate;
+  background-color: #05090c;
+  background-image:
+    linear-gradient(90deg, #05090c 0%, rgba(5, 9, 12, 0.96) 26%, rgba(5, 9, 12, 0.72) 49%, rgba(5, 9, 12, 0.16) 100%),
+    linear-gradient(0deg, rgba(5, 9, 12, 0.4), transparent 35%),
+    url("../img/bg-cyberstorm.png");
+  background-position: center, center, center;
+  background-size: cover;
+}
+
+.conteudo-erro {
+  width: min(100%, 610px);
+  z-index: 1;
+}
+
+.status-sinal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: #47ffc5;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.status-sinal span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #47ffc5;
+  box-shadow: 0 0 14px rgba(71, 255, 197, 0.8);
+}
+
+.codigo-erro {
+  color: #47ffc5;
+  font-family: "Secular One", sans-serif;
+  font-size: clamp(7rem, 19vw, 13rem);
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+  text-shadow: 0 0 42px rgba(71, 255, 197, 0.18);
+}
+
+.conteudo-erro h1 {
+  max-width: 550px;
+  margin-top: 28px;
+  font-family: "Secular One", sans-serif;
+  font-size: clamp(2rem, 4.6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.descricao-erro {
+  max-width: 440px;
+  margin-top: 16px;
+  color: #c1cbd0;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.botao-inicio {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 0 22px;
+  border: 1px solid #47ffc5;
+  border-radius: 4px;
+  background-color: #47ffc5;
+  color: #06100e;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.botao-inicio:hover {
+  background-color: transparent;
+  color: #47ffc5;
+  box-shadow: 0 0 22px rgba(71, 255, 197, 0.2);
+}
+
+.botao-inicio:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.botao-inicio span {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.assinatura {
+  position: absolute;
+  right: clamp(24px, 5vw, 72px);
+  bottom: 28px;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.58);
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+.assinatura span {
+  color: #47ffc5;
+}
+
+@media (max-width: 640px) {
+  .pagina-erro {
+    align-items: flex-end;
+    padding: 48px 24px 120px;
+    background-image:
+      linear-gradient(0deg, #05090c 4%, rgba(5, 9, 12, 0.94) 38%, rgba(5, 9, 12, 0.3) 100%),
+      url("../img/bg-cyberstorm-mobile.png");
+    background-position: center, center top;
+    background-size: cover;
+  }
+
+  .status-sinal {
+    margin-bottom: 18px;
+    font-size: 0.7rem;
+  }
+
+  .codigo-erro {
+    font-size: clamp(7rem, 32vw, 10rem);
+  }
+
+  .conteudo-erro h1 {
+    margin-top: 20px;
+  }
+
+  .assinatura {
+    right: 24px;
+    bottom: 24px;
+    font-size: 0.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

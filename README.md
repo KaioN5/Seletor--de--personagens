@@ -20,13 +20,17 @@ Os personagens que aparecem são Cyberstorm, Codepixie, Hexblade, Neonpulse e Co
 
 Não precisa instalar nada. Baixe ou clone este repositório e abra o arquivo `index.html` no navegador.
 
+O arquivo `404.html` contém uma página de erro personalizada para publicação em hospedagens que reconhecem esse nome como página de não encontrado.
+
 ## Pastas e arquivos
 
 ```text
 .
 ├── index.html
+├── 404.html
 └── src
     ├── css
+    │   ├── 404.css
     │   ├── reset.css
     │   ├── responsivo.css
     │   └── style.css
